@@ -249,24 +249,24 @@ Data-Driven Recommendations
 ```text
 Tech-Savvy-Marketing-Campaign-Analysis/
 │
-├── Dataset/
-│   ├── Raw_Dataset.xlsx
-│   ├── Cleaned_Dataset.xlsx
-│   └── Data_Dictionary.xlsx
-│
-├── Excel/
-│   └── Marketing_Analysis_Workbook.xlsx
+├── Excel_Workbook/
+│   └── Tech_Savvy_Marketing_Analysis.xlsx
 │
 ├── Reports/
+│   ├── Week_1_Email.pdf
+│   ├── Week_2_Insights_Report.pdf
+│   ├── Week_3_Business_Intelligence_Report.pdf
+|   ├── Pivot_Table.pdf
 │   ├── Final_Analytics_Report.pdf
 │   ├── Business_Optimisation_Proposal.pdf
-│   └── Insights_Report.pdf
+│   ├── Strategic_ Recommendation_Memo.pdf
+│   └── Personal_Reflection.pdf
 │
 ├── Presentation/
 │   └── Portfolio_Presentation.pptx
 │
-├── Image/
-│   └── Dashboard_Screenshot.png
+├── Images/
+│   └── Marketing_Dashboard.png
 │
 └── README.md
 ```
@@ -279,7 +279,7 @@ By combining data cleaning, exploratory analysis, dashboard development, campaig
 
 Beyond reporting historical results, the analysis focuses on helping decision-makers understand what is working, identify areas requiring improvement, and make more informed marketing investment decisions.
 
-**Analyst**: Precious Onyedum
-**Project**: Tech Savvy Solutions – Marketing Campaign Performance Analysis
-**Tool**: Microsoft Excel 2016
-**Period Analysed**: Q3 (July – September)
+**Analyst**: Precious Onyedum  
+**Project**: Tech Savvy Solutions – Marketing Campaign Performance Analysis  
+**Tool**: Microsoft Excel 2016  
+**Period Analysed**: Q3 (July – September) 
