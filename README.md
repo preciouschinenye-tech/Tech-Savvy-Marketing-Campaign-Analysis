@@ -74,7 +74,7 @@ No additional personal or confidential information has been intentionally added 
 
 ## Tools and Techniques
 
-## Primary Tool: Microsoft Excel 2016
+### Primary Tool: Microsoft Excel 2016
 
 The project demonstrates the use of Excel for data preparation, business analysis, reporting, and forecasting.
 
