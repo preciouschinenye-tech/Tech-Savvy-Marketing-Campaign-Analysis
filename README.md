@@ -205,26 +205,26 @@ The analysis was designed to answer the following questions:
 
 The project includes the following deliverables:
 
-**- Cleaned Dataset:** Prepared marketing campaign data.
-**- Data Dictionary:** Documentation of dataset fields, descriptions, formats, and data quality observations.
-**- Excel Analysis Workbook:** Data preparation, formulas, Pivot Tables, charts, calculations, and analysis.
-**- Marketing Performance Dashboard:** Visual summary of Q3 campaign performance.
-**- Monthly Trend Analysis:** Comparison of marketing performance across July, August, and September.
-**- Correlation Analysis:** Assessment of the relationship between advertising spend and leads.
-**- Campaign Segmentation:** ROI-based campaign classification.
-**- Q4 Revenue Projection:** Estimated October–December revenue.
-**- Competitor Comparison Matrix:** Benchmarking against simulated competitors.
-**- Final Analytics Report:** Business insights and strategic recommendations.
-**- Business Optimisation Proposal:** Proposed improvements to marketing data management and reporting.
-**- Portfolio Presentation:** Summary of the project, findings, and recommendations.
+- **Cleaned Dataset:** Prepared marketing campaign data.
+-  **Data Dictionary:** Documentation of dataset fields, descriptions, formats, and data quality observations.
+- **Excel Analysis Workbook:** Data preparation, formulas, Pivot Tables, charts, calculations, and analysis.
+- **Marketing Performance Dashboard:** Visual summary of Q3 campaign performance.
+- **Monthly Trend Analysis:** Comparison of marketing performance across July, August, and September.
+- **Correlation Analysis:** Assessment of the relationship between advertising spend and leads.
+- **Campaign Segmentation:** ROI-based campaign classification.
+- **Q4 Revenue Projection:** Estimated October–December revenue.
+- **Competitor Comparison Matrix:** Benchmarking against simulated competitors.
+- **Final Analytics Report:** Business insights and strategic recommendations.
+- **Business Optimisation Proposal:** Proposed improvements to marketing data management and reporting.
+- **Portfolio Presentation:** Summary of the project, findings, and recommendations.
 
 ## Business Recommendations
 
 The analysis supports three broad areas of action:
 
-**1. Prioritise stronger-performing campaigns:** Review high-ROI campaigns and consider increasing investment where performance is sustainable and supported by sufficient evidence.
-**2. Improve underperforming campaigns:** Investigate low-ROI campaigns, review their targeting, messaging, channel selection, and spending, and test improvements before making further investment decisions.
-**3. Standardise marketing reporting:** Introduce a structured marketing data-entry and reporting template with consistent formats, validation rules, and reusable reporting layouts to improve data quality and reporting efficiency.
+1. **Prioritise stronger-performing campaigns:** Review high-ROI campaigns and consider increasing investment where performance is sustainable and supported by sufficient evidence.
+2. **Improve underperforming campaigns:** Investigate low-ROI campaigns, review their targeting, messaging, channel selection, and spending, and test improvements before making further investment decisions.
+3. **Standardise marketing reporting:** Introduce a structured marketing data-entry and reporting template with consistent formats, validation rules, and reusable reporting layouts to improve data quality and reporting efficiency.
 
 ## Skills Demonstrated
 
