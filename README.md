@@ -228,21 +228,21 @@ The analysis supports three broad areas of action:
 
 ## Skills Demonstrated
 
-Microsoft Excel 2016
-Data Cleaning and Preparation
-Data Validation
-Exploratory Data Analysis
-Business and Marketing Analytics
-Pivot Tables and Pivot Charts
-Excel Dashboard Development
-KPI Reporting
-ROI and Conversion Analysis
-Campaign Segmentation
-Correlation Analysis
-Revenue Forecasting
-Competitor Benchmarking
-Business Reporting
-Data-Driven Recommendations
+- Microsoft Excel 2016
+- Data Cleaning and Preparation
+- Data Validation
+- Exploratory Data Analysis
+- Business and Marketing Analytics
+- Pivot Tables and Pivot Charts
+- Excel Dashboard Development
+- KPI Reporting
+- ROI and Conversion Analysis
+- Campaign Segmentation
+- Correlation Analysis
+- Revenue Forecasting
+- Competitor Benchmarking
+- Business Reporting
+- Data-Driven Recommendations
 
 ## Project Structure
 
