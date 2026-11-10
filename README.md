@@ -279,7 +279,7 @@ By combining data cleaning, exploratory analysis, dashboard development, campaig
 
 Beyond reporting historical results, the analysis focuses on helping decision-makers understand what is working, identify areas requiring improvement, and make more informed marketing investment decisions.
 
-**Analyst:** Precious Onyedum
-**Project:** Tech Savvy Solutions – Marketing Campaign Performance Analysis
-**Tool:** Microsoft Excel 2016
-**Period Analysed:** Q3 (July – September)
+**Analyst**: Precious Onyedum
+**Project**: Tech Savvy Solutions – Marketing Campaign Performance Analysis
+**Tool**: Microsoft Excel 2016
+**Period Analysed**: Q3 (July – September)
