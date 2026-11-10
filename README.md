@@ -129,7 +129,7 @@ The dashboard uses KPI summaries, Pivot Tables, and visualisations to help users
 
 The dashboard provides a visual summary of Q3 marketing campaign performance, including revenue, advertising spend, ROI, leads, and conversions.
 
-![Marketing Performance Dashboard](Images/Marketing_Dashboard.png)
+![Marketing Performance Dashboard](Image/Marketing_Dashboard.png)
 
 **4. Monthly Trend Analysis**
 
