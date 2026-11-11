@@ -146,6 +146,7 @@ Campaigns were classified using ROI-based performance thresholds:
 | High Performer	| 300% and above |
 | Average Performer	| 100% – 299% |
 | Low Performer	| Below 100% |
+| Not-Rated | 
 
 This classification provides a structured way to compare campaigns and identify those requiring further review.
 
@@ -174,7 +175,7 @@ The comparison considered ROI, cost per lead, marketing channel, conversion rate
 
 Competitor figures are illustrative and were created for the purpose of the portfolio exercise. They should not be interpreted as verified market data.
 
-## Key Business Questions
+### Key Business Questions
 
 The analysis was designed to answer the following questions:
 
@@ -198,7 +199,7 @@ The work follows the four weekly client briefs from the programme. Each week bui
 | 3 | Business intelligence and prediction | Monthly trend, correlation, segmentation, Q4 projection, competitor comparison, strategy memo | `Week_3_Business_Intelligence_Report.pdf`; `Strategic_Recommendation_Memo.pdf` |
 | 4 | Executive reporting | End-of-month analytics report, optimisation proposal, portfolio presentation, reflection | `Final_Analytics_Report.pdf`; `Business_Optimisation_Proposal_Memo.pdf`; `Portfolio_Presentation.pptx`; `Personal_Reflection.pdf` |
 
-## Skills demonstrated
+### Skills demonstrated
 
 - **Data cleaning:** duplicate removal, missing-value handling, format standardisation, recalculating ROI
 - **Analysis:** ROI, conversion rate, cost per lead, correlation (CORREL), segmentation, month-over-month growth
@@ -206,7 +207,7 @@ The work follows the four weekly client briefs from the programme. Each week bui
 - **Business communication:** reports, memos and recommendations written for a marketing manager
 - **Critical review:** finding and documenting data limitations that affect the conclusions
 
-## Project Structure
+### Project Structure
 
 ```text
 Tech-Savvy-Marketing-Campaign-Analysis/
