@@ -1,110 +1,106 @@
-# Tech-Savvy-Marketing-Campaign-Analysis
-An Excel-based marketing campaign performance analysis for Tech Savvy Solutions, examining Q3 campaign profitability, channel performance, ROI, customer conversions, campaign segmentation, and Q4 revenue projections.
+# Tech Savvy Solutions: Q3 Marketing Campaign Performance Analysis
+An Excel analysis of 30 marketing campaigns (July to September 2024) that answers one business question: where should the marketing budget go next quarter?
 
-# Tech Savvy Solutions: Marketing Campaign Performance Analysis
+The project covers data cleaning, KPI reporting, a dashboard, channel and campaign analysis, correlation, segmentation and a simple Q4 projection. It also records the data problems I found and how much they change the conclusions.
 
-## Project Overview
+**Marketing Performance Dashboard**
 
-This project presents an end-to-end marketing campaign performance analysis for Tech Savvy Solutions, a simulated technology business seeking to evaluate the effectiveness of its marketing activities and make more informed budget allocation decisions.
+An Excel dashboard was developed to provide a consolidated view of campaign performance.
 
-Using Microsoft Excel 2016, I analysed third-quarter (Q3) marketing campaign data covering July to September to assess campaign profitability, advertising efficiency, channel performance, lead generation, and conversion outcomes.
+The dashboard provides a visual summary of Q3 marketing campaign performance, including revenue, advertising spend, ROI, leads, and conversions.
 
-The analysis also explores campaign segmentation, relationships between advertising spend and lead generation, competitor benchmarking, and Q4 revenue projections.
+![Marketing Performance Dashboard](04_Image/Marketing_Dashboard.png)
 
-The objective was to transform raw marketing data into actionable business insights that can support better marketing decisions and improve future campaign performance.
+### Project at a Glance
 
-## Business Problem
-
-Tech Savvy Solutions needed a clearer understanding of how its marketing campaigns performed during Q3.
-
-Although the business invested in multiple marketing channels, it needed to identify:
-
-- Which campaigns generated the strongest return on investment.
-- Which marketing channels contributed the most revenue and delivered better returns.
-- Whether higher advertising expenditure translated into increased lead generation.
-- Which campaigns were underperforming and required further attention.
-- How Q3 performance could inform marketing priorities and revenue expectations for Q4.
-
-Without a structured analysis, the business risked allocating marketing resources inefficiently and continuing campaigns without sufficient performance evidence.
-
-## Project Objectives
-
-The objectives of this analysis were to:
-
-- Clean, validate, and prepare the marketing campaign dataset for analysis.
-- Evaluate campaign performance using revenue, advertising spend, ROI, leads, and conversions.
-- Compare marketing channel performance and identify stronger-performing channels.
-- Examine monthly performance trends across the Q3 reporting period.
-- Segment campaigns according to ROI performance.
-- Investigate the relationship between advertising spend and lead generation.
-- Develop Q4 revenue projections using historical monthly growth rates.
-- Benchmark business performance against simulated competitors.
-- Provide actionable recommendations to improve future marketing decisions.
-
-## Dataset Overview
-
-| Dataset Attribute | Description |
+| Item | Details |
 |---|---|
-| Business | Tech Savvy Solutions |
-| Reporting Period | July – September (Q3) |
-| Total Records | 30 marketing campaigns |
-| Dataset Columns | 13 original variables |
-| Data Type | Structured marketing campaign data |
-| Analysis Tool | Microsoft Excel 2016 |
+| **Programme** | Skill2Scale 4-Week Virtual Internship (Data Analytics), Cohort 6 |
+| **Client (scenario)** | Tech Savvy Solutions, a fictional digital marketing consultancy for e-commerce brands |
+| **Period analysed** | Q3 2024 (July to September) |
+| **Data** | 30 campaigns after cleaning (32 raw rows, 2 duplicates removed), 15 raw columns |
+| **Currency** | Nigerian naira (₦) |
+| **Tool** | Microsoft Excel 2016 (Pivot Tables, Pivot Charts, formulas, dashboard) |
+| **Analyst** | Precious Onyedum |
 
-The dataset contains campaign-level information, including:
+### Business problem
 
-- Campaign Name
-- Marketing Channel
-- Launch Date
-- Advertising Spend
-- Revenue
-- Leads
-- Conversions
-- Return on Investment (ROI)
-- Conversion Rate
+The marketing manager wanted to know:
 
-Additional analytical fields, including Month and Campaign Segment, were created to support the analysis.
+- Which campaigns and channels returned the most for the money spent?
+- Does spending more on advertising bring more leads?
+- How did performance change across the quarter?
+- Which campaigns should be scaled, fixed or reviewed in Q4?
 
-## Data Source and Privacy
+##### Headline Numbers
 
-The dataset was provided as part of an internship training assignment and was used for learning and analytical practice. The original data source and collection methodology were not independently verified. The dataset has been used for this portfolio project in accordance with the applicable internship instructions. 
+| KPI | Value | How it is calculated |
+|---|---|---|
+| Total revenue | ₦68,770,000 | Sum of campaign revenue |
+| Total ad spend | ₦11,495,000 | Sum of campaign ad spend (see data limits below) |
+| Leads / conversions | 8,003 / 1,835 | Sum across campaigns |
+| Conversion rate | 22.93% | Conversions ÷ leads |
+| Cost per lead | ₦1,436 | Total ad spend ÷ total leads |
+| Cost per conversion | ₦6,264 | Total ad spend ÷ total conversions |
+| Average campaign ROI | 471% | Simple mean of the 30 campaign ROIs |
+| Median campaign ROI | 344% | The middle campaign, less affected by extreme values |
+| Overall ROI | 498% | (Total revenue − total spend) ÷ total spend |
+| Click-through rate | 2.25% | Indicative only, see limitations |
 
-No additional personal or confidential information has been intentionally added to the analysis.
+**ROI** is calculated as (Revenue − Ad Spend) ÷ Ad Spend. The Week 4 client brief asks for total campaign ROI, which is the overall figure (498%). The 471% average is shown for comparison.
 
-## Tools and Techniques
+### Key findings
 
-### Primary Tool: Microsoft Excel 2016
+1. **Paid Ads earned the most revenue, but not the best return.** It brought in ₦17.63M (25.6% of revenue) while using 39.4% of the ad spend. Its ROI is about 289%. Email (about 538%) and Display (about 565%) returned more for each naira spent.
+2. **The Referral Programme and the segmented VIP email campaign had the highest ROI.** Referral turned ₦250,000 of spend into ₦8.0M of revenue (3,100% ROI). The VIP email campaign turned ₦85,000 into ₦1.98M (2,229% ROI). Both are small, single campaigns, so they need testing before anyone assumes they will scale.
+3. **Audio Ads was the weakest channel with complete data.** It used 5.9% of ad spend (₦680,000) but produced only 2.0% of revenue (₦1.4M), an ROI of about 106%. Organic and Messaging only look weak in the original pivot because they have no ad spend recorded, so their ROI shows as 0%.
+4. **Revenue depends heavily on a few campaigns.** Three campaigns that ran for the whole quarter (Referral Programme, Display Ads Q3 and SEO Content Push) produced ₦18.56M, which is 27% of total revenue.
+5. **More spend does not guarantee more leads.** The correlation between ad spend and leads is 0.45 (R² ≈ 0.20), so spend explains about one fifth of the variation in leads. It rises to 0.57 if the three zero-spend rows are removed. Targeting, creative and channel clearly matter too.
+6. **Campaign segments:** 20 campaigns (67%) were High Performers (ROI of 300% or more), 4 (13%) were Average (100% to 299%) and 6 (20%) were Low (below 100%). Read the Low group with care, because some of those six are data problems, not poor campaigns (see below).
+7. **Revenue by launch month fell from ₦34.44M in July to ₦18.04M in August and ₦16.29M in September.** This pattern is largely caused by how revenue is assigned to months, so do not read it as a real collapse (see below).
 
-The project demonstrates the use of Excel for data preparation, business analysis, reporting, and forecasting.
+### Recommendations
 
-| Area | Techniques Used |
-|---|---|
-| Data Cleaning | Duplicate checks, missing-value checks, data validation, data formatting |
-| Data Preparation | Calculated columns, date extraction, data standardisation |
-| Data Analysis | Summary statistics, descriptive analysis, KPI calculations |
-| Data Summarisation | Pivot Tables and Pivot Charts |
-| Data Visualisation | Interactive dashboard, charts, and KPI cards |
-| Campaign Analysis | ROI analysis and campaign performance ranking |
-| Segmentation | High, Average, and Low Performer classification |
-| Correlation Analysis | `CORREL` function and scatter plot with trendline |
-| Forecasting | Month-over-month growth calculations and Q4 revenue projections |
-| Benchmarking | Competitor comparison matrix |
+1. **Test a budget shift before scaling.** Keep Paid Ads running, but move a small share of its budget (for example 10% to 15%) to Email and Display for one campaign cycle and compare ROI.
+2. **Test whether Referral and segmented email can grow. Both returned a lot from very small budgets.** Increase spend step by step and watch whether ROI holds.
+3. **Review only the genuinely weak campaigns.** Audio Ads is the weakest channel with complete data (about 106% ROI). Radio Digital Ad (57%) and Instagram Summer (87%) are the only campaigns with both spend and revenue recorded that returned less than 100%.
+4. **Fix how data is recorded.** Mark missing ad spend as "not reported", not zero. Record revenue by the month it was earned. Use the standard campaign template described in the Business Optimisation Proposal.
 
-## Project Workflow
+### Data source and quality
 
-**1. Data Cleaning and Preparation**
+**Source.** The data comes from the Skill2Scale virtual internship, which is a guided simulation with a fictional client. The brief describes the dataset as "messy" on purpose, so that cleaning could be practised, and the competitor data could be "public or simulated". The figures are training data, not real company performance, and I could not verify how they were produced. Treat the results as a demonstration of method.
+
+### Limitations: how much to trust the results
+
+I reviewed the finished analysis again and found the following issues. They do not make the project worthless, but they change how some numbers should be read.
+
+| Issue | What happened | Effect on the results |
+|---|---|---|
+| Months are based on launch date | Each campaign's full revenue is placed in the month it started. Three campaigns that ran all quarter (₦18.56M) are all counted in July. | Without them, July is ₦15.88M, August ₦18.04M and September ₦16.29M, which is roughly flat. The 47.6% "fall" and the Q4 decline projection are therefore mostly a result of the method. |
+| Missing spend was set to ₦0 | LinkedIn B2B Push (spend blank) and WhatsApp Campaign (spend "N/A") became ₦0 spend, and SEO Content Push genuinely had ₦0. All three show 0% ROI and are labelled Low Performers, yet they earned ₦8.4M (12% of revenue). | Their true ROI is unknown for the first two, so the Low Performer group and the "bottom 3" list overstate weak performance. Total spend is probably understated, and overall ROI probably overstated. |
+| Revenue "-" set to ₦0 | End of Q3 Social was still "Pending" and its revenue was recorded as "-". It appears as -100% ROI. | This shows missing revenue, not proven failure. |
+| Click values were replaced | 17 raw rows had the identical value 2,340 in the Clicks column. In the cleaned data, 16 were replaced with values equal to 2% or 3% of impressions. Referral's missing impressions were set to 0. | The 2.25% CTR is partly built on assumptions. Treat it as indicative and do not base decisions on it. |
+| Averages are skewed | Referral (3,100%) and VIP email (2,229%) pull the average ROI up. | The median (344%) describes a typical campaign better than the 471% average. |
+| Small sample | Only 30 campaigns, and some channels (Referral, Organic, Messaging, Affiliate) are a single campaign. | Channel ROI for those channels is really one campaign's ROI. |
+| Correlation, not cause | The 0.45 correlation comes from 30 data points. | It shows an association only. |
+| Q4 projection is very simple | The forecast applies the average of only two monthly growth rates (-47.6% and -9.7%) to three future months. | Use it to show the method, not to plan a budget. |
+| Competitor comparison is simulated | The brief allowed public or simulated competitor data. The BrandPulse NG and AdVance Digital figures are illustrative. | They are not real benchmarks, so they are not used in the findings above. |
+
+### Project Workflow
+
+**1. Data Cleaning steps and Preparation**
 
 The raw dataset was reviewed and prepared for analysis.
 
 Key activities included:
 
-- Identifying and investigating duplicate transaction or campaign identifiers.
-- Checking missing values in relevant fields.
-- Standardising inconsistent currency and numerical formats.
-- Reviewing calculated values for accuracy.
-- Creating additional analytical fields for monthly and campaign-level analysis.
-- Documenting the dataset structure and data quality observations.
+- Removed 2 duplicate rows (C001 and C003), leaving 30 campaigns.
+- Standardised text formats (for example "completed" and "Completed") and dates.
+- Replaced "N/A" and blank ad spend with 0, and an invalid "-" revenue value with 0.
+- Corrected one row where values had shifted into the wrong column.
+- Recalculated ROI for every campaign because some values were missing.
+- Added Month (based on campaign start date) and Segment (based on ROI).
+- Replaced missing account managers with "Unknown - Pending Confirmation".
 
 A cleaned dataset was prepared for subsequent analysis.
 
@@ -120,16 +116,6 @@ Key metrics examined included:
 - Total Leads
 - Total Conversions
 - Conversion Rate
-
-**3. Marketing Performance Dashboard**
-
-An Excel dashboard was developed to provide a consolidated view of campaign performance.
-
-The dashboard uses KPI summaries, Pivot Tables, and visualisations to help users monitor marketing performance and identify important trends.
-
-The dashboard provides a visual summary of Q3 marketing campaign performance, including revenue, advertising spend, ROI, leads, and conversions.
-
-![Marketing Performance Dashboard](04_Image/Marketing_Dashboard.png)
 
 **4. Monthly Trend Analysis**
 
@@ -201,48 +187,24 @@ The analysis was designed to answer the following questions:
 7. What revenue could the business potentially generate during Q4 if the observed growth pattern continues?
 8. How does Tech Savvy Solutions compare with the simulated competitors?
 
-## Deliverables
+###  Project Brief and Deliverables
 
-The project includes the following deliverables:
+The work follows the four weekly client briefs from the programme. Each week built on the one before.
 
-- **Cleaned Dataset:** Prepared marketing campaign data.
--  **Data Dictionary:** Documentation of dataset fields, descriptions, formats, and data quality observations.
-- **Excel Analysis Workbook:** Data preparation, formulas, Pivot Tables, charts, calculations, and analysis.
-- **Marketing Performance Dashboard:** Visual summary of Q3 campaign performance.
-- **Monthly Trend Analysis:** Comparison of marketing performance across July, August, and September.
-- **Correlation Analysis:** Assessment of the relationship between advertising spend and leads.
-- **Campaign Segmentation:** ROI-based campaign classification.
-- **Q4 Revenue Projection:** Estimated October–December revenue.
-- **Competitor Comparison Matrix:** Benchmarking against simulated competitors.
-- **Final Analytics Report:** Business insights and strategic recommendations.
-- **Business Optimisation Proposal:** Proposed improvements to marketing data management and reporting.
-- **Portfolio Presentation:** Summary of the project, findings, and recommendations.
+| Week | Brief | What I delivered | Where to find it |
+|---|---|---|---|
+| 1 | Data foundations | Cleaned dataset, data dictionary, folder SOP, summary statistics, data summary email | Workbook sheets (Cleaned Data, Data Dictionary, Folder Structure SOP, Summary Statistics); `Week_1_Data_Summary_Email.pdf` |
+| 2 | Visualisation and insight | Dashboard with 5 KPIs, pivot tables, insights report, executive summary | `Marketing_Dashboard.png`; `Week_2_Performance_Insights_Report.pdf`; `Pivot_Table.pdf` |
+| 3 | Business intelligence and prediction | Monthly trend, correlation, segmentation, Q4 projection, competitor comparison, strategy memo | `Week_3_Business_Intelligence_Report.pdf`; `Strategic_Recommendation_Memo.pdf` |
+| 4 | Executive reporting | End-of-month analytics report, optimisation proposal, portfolio presentation, reflection | `Final_Analytics_Report.pdf`; `Business_Optimisation_Proposal_Memo.pdf`; `Portfolio_Presentation.pptx`; `Personal_Reflection.pdf` |
 
-## Business Recommendations
+## Skills demonstrated
 
-The analysis supports three broad areas of action:
-
-1. **Prioritise stronger-performing campaigns:** Review high-ROI campaigns and consider increasing investment where performance is sustainable and supported by sufficient evidence.
-2. **Improve underperforming campaigns:** Investigate low-ROI campaigns, review their targeting, messaging, channel selection, and spending, and test improvements before making further investment decisions.
-3. **Standardise marketing reporting:** Introduce a structured marketing data-entry and reporting template with consistent formats, validation rules, and reusable reporting layouts to improve data quality and reporting efficiency.
-
-## Skills Demonstrated
-
-- Microsoft Excel 2016
-- Data Cleaning and Preparation
-- Data Validation
-- Exploratory Data Analysis
-- Business and Marketing Analytics
-- Pivot Tables and Pivot Charts
-- Excel Dashboard Development
-- KPI Reporting
-- ROI and Conversion Analysis
-- Campaign Segmentation
-- Correlation Analysis
-- Revenue Forecasting
-- Competitor Benchmarking
-- Business Reporting
-- Data-Driven Recommendations
+- **Data cleaning:** duplicate removal, missing-value handling, format standardisation, recalculating ROI
+- **Analysis:** ROI, conversion rate, cost per lead, correlation (CORREL), segmentation, month-over-month growth
+- **Excel:** Pivot Tables, Pivot Charts, slicers, KPI dashboard
+- **Business communication:** reports, memos and recommendations written for a marketing manager
+- **Critical review:** finding and documenting data limitations that affect the conclusions
 
 ## Project Structure
 
@@ -270,16 +232,12 @@ Tech-Savvy-Marketing-Campaign-Analysis/
 │
 └── README.md
 ```
+**Workbook sheets:** Raw Data, Cleaned Data, Summary Statistics, Data Dictionary, Folder Structure SOP and Pivot Tables.
 
-## Conclusion
+### Conclusion
 
 This project demonstrates how Microsoft Excel can be used to transform raw marketing campaign data into meaningful business insights.
 
 By combining data cleaning, exploratory analysis, dashboard development, campaign segmentation, correlation analysis, forecasting, and competitor benchmarking, the project provides a structured approach to evaluating marketing performance.
 
 Beyond reporting historical results, the analysis focuses on helping decision-makers understand what is working, identify areas requiring improvement, and make more informed marketing investment decisions.
-
-**Analyst**: Precious Onyedum  
-**Project**: Tech Savvy Solutions – Marketing Campaign Performance Analysis  
-**Tool**: Microsoft Excel 2016  
-**Period Analysed**: Q3 (July – September) 
